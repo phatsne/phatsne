@@ -1,0 +1,117 @@
+.carousel-inner .carousel-item img {
+	width: 100%;
+	height: auto;
+}
+#tours {
+	margin-bottom: 4rem;
+}
+#tours .card {
+	border: none;
+}
+#tours .card .card-body {
+	position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 93%;
+    height: 100%;
+    padding: 100px 85px;
+    background-color: #22222294;
+    opacity: 0;
+	border-radius: var(--bs-card-inner-border-radius);
+}
+#tours .card .card-body:hover {
+	opacity: 1;
+	transition: all 1s ease;
+	cursor: pointer;
+}
+#tours .card img {
+	border-radius: var(--bs-card-inner-border-radius);
+	
+}
+#tours .card .card-body .btn-mg {
+	margin-bottom: 10px;
+}
+.Travelbee{
+    font-size: 40px;    
+    color: rgb(233, 181, 23);
+    padding: 0 32px;
+}
+.sandeal {
+	padding: 0 20px;
+}
+.sandeal img{
+	border-radius: 10px;
+	text-align: center;
+	margin: 0 auto;
+	width:  100%;
+
+}
+.giave{
+	color: rgb(249, 109, 1);
+	font-size: normal;
+}
+.giagoc{
+	color: rgb(143, 143, 143);
+	font-size: normal;
+	text-decoration-line: line-through;
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+.giaiphap , .giare, .thanhtoan, .lienhe{
+	padding: 10px;
+}
+.footer{
+	background-color: black;
+}
+.end{
+	background-color: #333;
+}
+h5{
+	color: white;
+}
+/* slider button */
+.slick-prev, .slick-next {
+	position: relative;
+}
+.slick-prev:before, .slick-next:before {
+	/* content: '';
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	width: 10px;
+	height: 10px; */
+	color: #333;
+}
+.slick-prev:before {
+	/*position: absolute;
+    top: 50%;
+	right: 0;
+    transform: translateY(-50%);
+    border: solid 1px #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;*/
+}
+.slick-next, .slick-prev {
+	position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    border: solid 1px #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+	transition: all 1s ease;
+	z-index: 9999;
+}
+.slick-next:hover,  .slick-prev:hover{
+	background-color: rgb(143, 143, 143);
+}

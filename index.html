@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>TravelBee</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./slick/slick.css" rel="stylesheet">
+    <link href="./slick/slick-theme.css" rel="stylesheet">
+    <link href="./assets/dist/css/style.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ" crossorigin="anonymous"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./assets/dist/css/carousel.css" rel="stylesheet">
+  </head>
+<body>   
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="Travelbee" href="#">TRAVELBEE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#tours">ĐẶT VÉ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#HDGT">HOẠT ĐỘNG GIẢI TRÍ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hotro">HỖ TRỢ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="./sign-in.html">LOGN IN</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <img src="./img/banner-1.png" alt="banner 1">
+        <div class="container">
+          <!-- <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <img src="./img/banner2.png" alt="banner 2">
+        <div class="container">
+          <!-- <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
+        <img src="./img/dulichdalat.png" alt="banner 2">
+        <div class="container">
+          <!-- <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div> -->
+        </div>      
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+  </div>
+
+  <section id="tours">
+    <div class="container">
+    <p class="h1">Tours</p>
+        <div class="row">
+            <div class="card col-lg-3">
+              <img src="https://ik.imagekit.io/tvlk/image/imageResource/2022/08/24/1661305617175-9a12c50acca2340d8ab7d07ee19538ef.png?tr=q-75,w-256" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary btn-mg">Dat ve</a>
+                <a href="#" class="btn btn-primary">Xem chi tiet</a>
+              </div>
+            </div>
+            <div class="card col-lg-3">
+              <img src="https://ik.imagekit.io/tvlk/image/imageResource/2022/08/24/1661305627703-20947f614fc7b56c662edbdc0c6be00d.png?tr=q-75,w-256" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary btn-mg">Dat ve</a>
+                <a href="#" class="btn btn-primary">Xem chi tiet</a>
+              </div>
+            </div>
+            <div class="card col-lg-3">
+              <img src="https://ik.imagekit.io/tvlk/image/imageResource/2022/08/24/1661305644068-0a16365a9a0c310a50e6755ad6a83208.png?tr=q-75,w-256" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary btn-mg">Dat ve</a>
+                <a href="#" class="btn btn-primary">Xem chi tiet</a>
+              </div>
+            </div>
+            <div class="card col-lg-3">
+              <img src="https://ik.imagekit.io/tvlk/image/imageResource/2022/08/24/1661305638933-560da92b546fb5343f6fbcabcd93395b.png?tr=q-75,w-256" alt="">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary btn-mg">Dat ve</a>
+                <a href="#" class="btn btn-primary">Xem chi tiet</a>
+              </div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <!-- Three columns of text below the carousel -->
+    <p id="HDGT" class="h2" style="margin-bottom: 70px;">Cùng TravelBee trãi nghiệm cảm giác du lịch</p>
+    
+    <div class="carousel-deal">
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/2000631839725/Watching%2520Sunrise%2520and%2520Catching%2520Clouds%2520in%2520Da%2520Lat%2520-%2520Half-Day%2520Tour-dae01ad0-1fe9-4d7b-9b8b-7a1f68c90a29.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Tour săn mây Đà Lạt- 1 ngày </p>
+        <div class="giagoc">
+          <p>VNĐ500.000</p>
+        </div>
+        <div class="giave">
+            <p>VNĐ 230.000</p>
+        </div>
+      </div>
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/6158958964307/My%2520Tho%252C%2520Ben%2520Tre%2520%2526%2520Can%2520Tho%2520Discovery%2520-%25202D1N%2520Tour%2520-5ca269d1-1c4f-4171-a5f4-7c14a3662ce3.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Khám phá Mỹ Tho,Bến Tre& <br>Cần Giờ-Tour 2N1Đ</p>
+        <div class="giagoc">
+          <p>VMĐ 1.500.000</p>
+        </div>
+        <div class="giave">
+            <p>VNĐ 1.265.000</p>
+        </div>
+      </div>
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/3585574316593/Diving%2520in%2520Con%2520Se%2520Tre%2520Island%2520Nha%2520Trang%2520-%2520Day%2520Tour%2520-290f2d68-a0b5-4b72-8bb8-780441461202.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Lặn biển tại Con Sẻ Tre <br>tại Nha Trang</p>
+        <div class="giagoc">
+          <p>VNĐ 1.100.000</p>
+        </div>
+        <div class="giave">
+            <p>VNĐ 675.000</p>
+        </div>
+      </div>
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/4991061397888/Explore%2520Can%2520Gio%2520-%25201-Day%2520Tour%2520-6c46f211-a85a-4478-80c5-c71752b6a6c8.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Khám phá Cần Giờ - Tour 1 ngày</p>
+        <div class="giagoc">
+          <p>VNĐ 700.000</p>
+        </div>
+        <div class="giave">
+          <p>VNĐ 580.000</p>
+        </div>
+      </div>
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/3942218049883/Hon%2520Tam%2520Island%2520-%2520Day-Tour%2520-a3fd25b9-4f4c-4ce7-89e3-1afa89ce354d.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Tour đảo Hòn Tằm - 1 ngày</p>
+        <div class="giagoc">
+          <p>VNĐ 355.000</p>
+        </div>
+        <div class="giave">
+          <p>VNĐ 320.500</p>
+        </div>
+      </div>
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/6552028908739/Seawalker%2520Phu%2520Quoc%2520by%2520Namaste-30f42f8a-3876-4e18-a33d-27ef6e1bd818.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Đi bộ dưới biển SeaWealker <br>
+           Phú Quốc Namaste</p>
+        <div class="giagoc">
+          <p>VNĐ 1.090.000</p>
+        </div>
+        <div class="giave">
+          <p>VNĐ 967.000</p>
+        </div>
+      </div>
+      <div class="sandeal">
+        <img src="https://ik.imagekit.io/tvlk/xpe-asset/AyJ40ZAo1DOyPyKLZ9c3RGQHTP2oT4ZXW+QmPVVkFQiXFSv42UaHGzSmaSzQ8DO5QIbWPZuF+VkYVRk6gh-Vg4ECbfuQRQ4pHjWJ5Rmbtkk=/9622202570033/Hanoi%2520City%2520Tour%2520-%25201%2520Day%2520-755b5f57-78a7-4130-b119-7320ad1688cd.jpeg?_src=imagekit&tr=c-at_max,h-456,q-60,w-256" alt="">
+        <p>Tour tham quan thủ đô Hà Nội - 1 ngày</p>
+        <div class="giagoc">
+          <p>VNĐ 656.000</p>
+        </div>
+        <div class="giave">
+          <p>VNĐ 590.000</p>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div id="hotro" class="tintuong" >
+      <p class="h2" style="margin-bottom: 70px;">tại sao nên tin tưởng TravelBee</p>
+      <div class="content">
+          <div class="giaiphap">
+              <img src="/img/giaiphap.webp" alt="">
+              <h2>Vấn đề chỗ ở</h2>
+              <p>Với TravelBee vấn đề chỗ ở 
+              <br>luôn được giải quyết ổn thỏa,
+              <br>đảm bảo trãi nghiệm tốt nhất
+              <br>cho khách hàng</p>
+          </div>
+          <div class="giare">
+              <img src="/img/giare.webp" alt="">
+              <h2>Chi phí tiết kiệm</h2>
+              <p>TravelBee luôn đảm bảo giá vé 
+              <br>thích hợp với mọi khách hàng mà 
+              <br>không làm ảnh hưởng đến trãi nghiệm 
+              <br>du lịch của mọi người</p>
+          </div>
+          <div class="thanhtoan">
+              <img src="/img/thanhtoan1.webp" alt="">
+              <h2>Thanh toán dễ dàng</h2>
+              <p>Tại TravelBee mọi phương thức 
+              <br>thanh toán đều dễ dàng và an toàn 
+              <br>tuyệt đối cho mỗi khách hàng.TravelBee 
+              <br>sẽ chịu toàn bộ trách nhiệm 
+              <br>nếu vấn đề liên quan đến chúng tôi</p>
+          </div>
+          <div class="lienhe">
+              <img src="/img/lienhe.webp" alt="">
+              <h2>Hỗ trợ khách hàng</h2>
+              <p>TravelBee luôn tận tình chăm sóc
+              <br>khách hàng 24/7 Đội ngũ nhân viên
+              <br>hỗ trợ khách hàng luôn sẵn sàng
+              <br>giúp đỡ bạn trong từng bước của quá
+              <br>trình đặt vé</p>
+          </div>    
+    </div>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+</main>
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <h5>Đối tác thanh toán</h5>
+          <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <p class="text-muted">&copy; 2022</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Về Chúng Tôi</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cách đặt chỗ</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">liên hệ với chúng tôi</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Trợ giúp</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tuyển dụng</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Về chúng tôi</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Sản Phẩm</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vé máy bay</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Khách sạn</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Xperience</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Biệt thự</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Căn hộ</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Đưa đón sân bay</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Combo tiết kiệm</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Car Rental</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Theo Dõi Chúng Tôi Tại</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Youtube</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div> 
+
+  </div>
+
+  <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <script>
+      $(document).ready(function(){
+        $('.carousel-deal').slick({
+          isfinite: true,
+          slidesToShow: 4,
+          speed: 300,
+          slidesToScroll:1,
+        });
+      });  
+  </script>    
+</body>
+</html>
